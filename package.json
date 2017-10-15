@@ -1,0 +1,25 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "个人博客",
+  "main": "index.js",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdawei/myblog.git"
+  },
+  "keywords": [
+    "blog"
+  ],
+  "author": "dawei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdawei/myblog/issues"
+  },
+  "homepage": "https://github.com/zdawei/myblog#readme",
+  "dependencies": {
+    "mysql": "^2.15.0"
+  }
+}
