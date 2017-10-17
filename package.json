@@ -20,6 +20,7 @@
   },
   "homepage": "https://github.com/zdawei/myblog#readme",
   "dependencies": {
+    "marked": "^0.3.6",
     "mysql": "^2.15.0"
   }
 }
