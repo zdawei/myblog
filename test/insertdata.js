@@ -10,10 +10,16 @@ var insertdata = {
 };
 
 module.exports = function(db) {
-    var template = 'insert into blogs(title, id, summary, content) values($insert$);';
-    for(var i in insertdata) {
-        db.query(template.replace(/\$insert\$/g, insertdata[i].join(',')), function(err) {
-            if(err) throw err;
-        });
-    }
+    db.query('select count(*) as num from blogs;', function(err, data) {
+        if(err) throw err;
+        console.log(data[0].num);
+        if(!data[0].num) {
+            var template = 'insert into blogs(title, id, summary, content) values($insert$);';
+            for(var i in insertdata) {
+                db.query(template.replace(/\$insert\$/g, insertdata[i].join(',')), function(err) {
+                    if(err) throw err;
+                });
+            }
+        }
+    });
 }

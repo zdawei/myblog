@@ -23,7 +23,7 @@ db.query(
     ', 
     function(err) {
         if(err) throw err;
-        // insertdata(db);
+        insertdata(db);
         var server = http.createServer(router(db)).listen(3000, '127.0.0.1');
         console.log('Server started...');
     }
