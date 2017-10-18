@@ -12,7 +12,6 @@ var insertdata = {
 module.exports = function(db) {
     db.query('select count(*) as num from blogs;', function(err, data) {
         if(err) throw err;
-        console.log(data[0].num);
         if(!data[0].num) {
             var template = 'insert into blogs(title, id, summary, content) values($insert$);';
             for(var i in insertdata) {
