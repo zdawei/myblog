@@ -7,11 +7,7 @@ var db = mysql.createConnection({
     host : '127.0.0.1',
     user : 'root',
     password : '123',
-<<<<<<< HEAD
     database : 'myblog'
-=======
-    database : 'test' 
->>>>>>> 9b3d5556ffb63a5fab0e35c2599327433a3aebb4
 });
 
 db.connect();
