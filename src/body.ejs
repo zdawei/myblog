@@ -1,0 +1,11 @@
+<%- include('header')%>
+<h1>个人博客</h1>
+<% for(var i in data) { %>
+<h2><%= data[i].title %></h2>
+<h3><%= data[i].time %></h3>
+<p><%= data[i].summary %></p>
+<a href="/aid/<%= data[i].id%>">点击查看</a>
+<hr>
+<% }%>
+<a href="/write">写博客</a>
+<%- include('footer') %>
