@@ -5,7 +5,9 @@
 <h3><%= data[i].time %></h3>
 <p><%= data[i].summary %></p>
 <a href="/aid/<%= data[i].id%>">点击查看</a>
+<a href="/aj/del?<%= data[i].id%>">删除</a>
 <hr>
 <% }%>
 <a href="/write">写博客</a>
+<a href="/aj/clear">清除所有博客</a>
 <%- include('footer') %>

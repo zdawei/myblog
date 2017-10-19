@@ -14,16 +14,16 @@ db.connect();
 
 db.query(
     'create table if not exists blogs(\
-        id int unsigned not null,\
+        id int unsigned not null primary key AUTO_INCREMENT,\
         title char(10) not null,\
         time timestamp,\
-        summary char(10) not null,\
+        summary char(50) not null,\
         content mediumtext \
-    )character set = utf8;\
+    )character set = utf8, AUTO_INCREMENT = 1;\
     ', 
     function(err) {
         if(err) throw err;
-        insertdata(db);
+        // insertdata(db);
         var server = http.createServer(router(db)).listen(3000, '127.0.0.1');
         console.log('Server started...');
     }
