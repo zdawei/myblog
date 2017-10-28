@@ -21,8 +21,10 @@
   "homepage": "https://github.com/zdawei/myblog#readme",
   "dependencies": {
     "ejs": "^2.5.7",
+    "jquery": "^3.2.1",
     "marked": "^0.3.6",
     "mysql": "^2.15.0",
+    "semantic-ui": "^2.2.13",
     "sha1": "^1.1.1"
   },
   "devDependencies": {}
