@@ -1,7 +1,9 @@
 <%- include('header')%>
 <div class="ui secondary pointing menu">
     <a class="active item"><i class="large home icon"></i>首页</a>
-    <a class="item"><i class="large user icon"></i>个人</a>
+    <% if(name) { %>
+        <a class="item"><i class="large user icon"></i>个人</a>
+    <% } %>
     <div class="right menu">
         <div class="item">
             <div class="ui icon input">
@@ -9,11 +11,16 @@
                 <i class="search link icon"></i>
             </div>
         </div>
-        <a class="ui item" id="login_home">登录</a>
-        <a class="ui item" id="register_home">注册</a>
+        <% if(name) { %>
+            <a class="ui item" id="personal"><%= name %></a>
+            <a class="ui item" href="/aj/logout" id="loginout_home">退出</a>
+        <% } else {%>
+            <a class="ui item" id="login_home">登录</a>
+            <a class="ui item" id="register_home">注册</a>
+        <% } %>
     </div>
 </div>
 <div class="ui segment">
-    <p>测试测试测试</p>
+    <p>登录注册模块终于差不多了</p>
 </div>
 <%- include('footer') %>
