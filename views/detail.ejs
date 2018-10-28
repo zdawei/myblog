@@ -1,7 +1,0 @@
-<%- include('header')%>
-<h1>个人博客</h1>
-<h2><%= (data && data.title) || ''%></h2>
-<h3><%= (data && data.time) || ''%></h3>
-<p><%= (data && data.content) || ''%></p>
-<a href="/edit/<%= data.id%>">编辑</a>
-<%- include('footer') %>
