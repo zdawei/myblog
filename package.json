@@ -1,0 +1,25 @@
+{
+  "name": "myblog",
+  "version": "1.0.0",
+  "description": "dawei's blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zdawei/myblog.git"
+  },
+  "author": "dawei",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zdawei/myblog/issues"
+  },
+  "homepage": "https://github.com/zdawei/myblog#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "eslint": "^5.9.0"
+  }
+}
